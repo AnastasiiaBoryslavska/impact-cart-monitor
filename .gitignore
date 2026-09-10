@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor & IDE artifacts
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Node / npm
+node_modules/
+npm-debug.log*
+
+# WordPress local dumps & environment
+wp-config.php
+*.sql
+*.tar.gz
+*.zip

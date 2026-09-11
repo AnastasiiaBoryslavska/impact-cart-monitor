@@ -263,8 +263,9 @@ class Impact_Cart_Monitor {
         if ( ! empty( $client_key ) ) {
             foreach ( $changes as $change ) {
                 if ( isset( $change['cart_item_key'] ) && $change['cart_item_key'] === $client_key ) {
-                    $most_recent = $change;
-                    break;
+                    if ( ! $most_recent || $change['timestamp'] > $most_recent['timestamp'] ) {
+                        $most_recent = $change;
+                    }
                 }
             }
         }

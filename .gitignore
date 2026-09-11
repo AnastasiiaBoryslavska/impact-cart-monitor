@@ -21,3 +21,7 @@ wp-config.php
 *.sql
 *.tar.gz
 *.zip
+
+# Workspace / agent skills
+.github/
+
